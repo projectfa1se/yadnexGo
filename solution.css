@@ -1,0 +1,29 @@
+
+div {
+    display: grid;
+    grid-template-rows: 96px 96px;
+    grid-template-columns: 96px 96px;
+    width: 192px;
+    height: 192px;
+    border-radius: 36px;
+    background-color: black;
+}
+
+div::before {
+    content: "";
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    background: linear-gradient(145deg, #fcdd2e, #fcb600);
+    border-radius: 36px 36px 0px 0px ;
+}
+
+div::after {
+    content: "";
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    background: linear-gradient(178deg, rgba(0, 0, 0, 0.18) 0%, #f5f4f0 7px, #f5f4f0 7px);
+    background-color: #f5f4f0;
+    /* box-shadow: inset 0px 7px 7px rgba(0,0,0,0.18); */
+    border-radius: 0px 0px  0px 36px;
+
+}
